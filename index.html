@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+<!-- !Copyright -->
+<!--
+	Project: org.rettapp.aid
+	Description: 
+	Author: Jonathan Starck 
+	Licence: GNU GENERAL PUBLIC LICENSE Version 2, June 1991 & European Union Public Licence
+	Source: https://github.com/RettApp/org.rettapp.aid
+-->
+<head>
+	<script src="cordova.js"></script>	<title>RettApp AID</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="core/jquery/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="core/stylesheet/custom.css">
+	<script src="core/jquery/2.1.4.min.js"></script>
+	<script src="core/jquery/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script src="core/javascript/app.js"></script>	<script src="core/javascript/custom.js"></script>
+</head><body><div data-role="page" id="main-01-disclaimer">
+	<div data-role="content" role="main" class="ui-content">
+		<div class="rettapp-banner">
+			<img src="core/image/rettapp_973x235_banner.png" alt="RettApp Logo" />
+		</div>
+		<p>Die Inhalte dieser App werden mit größtmöglicher Sorgfalt erstellt. Der Anbieter übernimmt jedoch keine Gewähr für die Richtigkeit, Vollständigkeit und Aktualität der bereitgestellten Inhalte. Die Nutzung der Inhalte der Website erfolgt auf eigene Gefahr des Nutzers. Dies gilt explizit‎ für Dosierungen von Medikamente. Die App stellt im Bereich Medikamente lediglich eine Hilfestellung da. Es gelten die allgemeine Gesetze sowie die Richtlinien des regional zuständigen Ärztlichen Leiter Rettungsdienst.</p>
+		<p>Diese App ist von Rettungsdienstler für Rettungsdienstler - uns ist wichtig, dass alle Informationen kostenlos und frei zugänglich für Sie zur Verfügung gestellt werden! Wir sprechen uns klar gegen z.B. kostenpflichtige SOP-Apps aus! Daher steht die RettApp unter der "GNU General Public License (GPL) v. 2" und der "European Union Public Licence (EUPL)".</p>
+		<a href="#main-02-index" class="ui-btn ui-icon-check ui-btn-icon-left ui-corner-all startuplink">Gelesen und Einverstanden</a>
+	</div>
+</div><div data-role="page" id="main-02-index">
+	<div data-role="header" data-position="fixed">
+		<a href="#function-99-navigationpanel" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-bars">Menü</a>
+		<span class="ui-title"></span>
+		<div data-role="controlgroup" data-type="horizontal" class="ui-mini ui-btn-right">
+			<a href="#function-02-settings" class="ui-btn ui-btn-icon-right ui-icon-gear ui-btn-icon-notext" data-transition="pop" data-direction="reverse">Einstellungen</a>
+			<a href="#main-02-index" class="ui-btn ui-btn-icon-right ui-icon-home ui-btn-icon-notext">Home</a>
+		</div>
+	</div>
+	<div data-role="content" role="main" class="ui-content">
+		<div class="rettapp-banner">
+			<img src="core/image/rettapp_973x235_banner.png" alt="Logo" />
+					</div>
+		<form class="ui-filterable">
+			<input id="inset-autocomplete-input" data-type="search" placeholder="Schnellsuche Hilfsmittel...">
+		</form>
+		<ul data-role="listview" data-inset="true" data-filter="true" data-filter-reveal="true" data-input="#inset-autocomplete-input" class="aid">
+			<li divider="Schemata" data-filtertext="ABC-Regel"><a href="#">ABC-Regel</a></li><li divider="Schemata" data-filtertext="ABCDE"><a href="#">ABCDE-Schema</a></li><li divider="Schemata" data-filtertext="AVPU-Schema,WASB-Schema"><a href="#">AVPU-Schema</a></li><li divider="Schemata" data-filtertext="Apgar-Score"><a href="#">Apgar-Score</a></li><li divider="Schemata" data-filtertext="BASIC"><a href="#">BASIC</a></li><li divider="Schemata" data-filtertext="BAUM-Schema"><a href="#">BAUM-Schema</a></li><li divider="Hilfsmittel" data-filtertext="Buchstabiertafel"><a href="#spellingalphabet-01-index">Buchstabiertafel</a></li><li divider="Schemata" data-filtertext="CPSS, Cincinatty Prehospital Stroce Scale"><a href="#">CPSS</a></li><li divider="Schemata" data-filtertext="DMS"><a href="#">DMS</a></li><li divider="Schemata" data-filtertext="DOPES"><a href="#">DOPES</a></li><li divider="Hilfsmittel" data-filtertext="Dosierer"><a href="#">Dosierer</a></li><li divider="Schemata" data-filtertext="FAST"><a href="#">FAST</a></li><li divider="Schemata" data-filtertext="4HsHITS, HITS"><a href="#">HITS</a></li><li divider="Schemata" data-filtertext="IPAP"><a href="#">IPAP</a></li><li divider="Schemata" data-filtertext="IPPAF-Schema"><a href="#">IPPAF-Schema</a></li><li divider="Schemata" data-filtertext="ISS, Injury Severity Score"><a href="#">ISS</a></li><li divider="Schemata" data-filtertext="KUSS-Skala,Kindliche Unbehagens- und Schmerz-Skala"><a href="#">KUSS-Skala</a></li><li divider="Schemata" data-filtertext="MEND, Miami Emergency Neurological Deficite Score"><a href="#">MEND</a></li><li divider="Schemata" data-filtertext="MONAS-BH"><a href="#">MONAS-BH</a></li><li divider="Schemata" data-filtertext="NACA-Score"><a href="#">NACA-Score</a></li><li divider="Schemata" data-filtertext="OPQRST"><a href="#">OPQRST</a></li><li divider="Schemata" data-filtertext="PECH"><a href="#">PECH-Schema</a></li><li divider="Schemata" data-filtertext="SAMPLE"><a href="#">SAMPLE-Schema</a></li><li divider="Schemata" data-filtertext="SAMPLER+S"><a href="#">SAMPLER+S</a></li><li divider="Schemata" data-filtertext="SBAR"><a href="#">SBAR</a></li><li divider="Schemata" data-filtertext="SSSS"><a href="#">SSSS</a></li>		</ul>
+		<ul data-role="listview" data-inset="true">
+			<li data-role="list-divider">Hauptfunktionen</li>
+			<li><a href="#aid-01-index">Hilfsmittel</a></li>
+			<li><a href="#">Dosierer</a></li>
+			<li><a href="#">Pack Years Kalkulator</a></li>
+			<li><a href="#spellingalphabet-01-index">Buchstabiertafel</a></li>
+		</ul>
+		<p>
+			<a href="#law-01-imprint" class="ui-btn ui-corner-all ui-btn-icon-right ui-icon-info ui-shadow" data-rel='dialog'>Kontakt</a>
+			<a href="#other-01-donate" class="ui-btn ui-corner-all ui-btn-icon-right ui-icon-heart ui-shadow">Buy Me a Beer</a>
+			<span class="showVersion"></span>
+		</p>
+		<p class="align-center">"GNU General Public License (GPL) v. 2" &amp; "European Union Public Licence (EUPL)"</p>
+	</div>
+</div><div data-role="page" id="spellingalphabet-01-index">
+	<div data-role="header" data-position="fixed">
+		<div data-role="controlgroup" data-type="horizontal" class="ui-mini ui-btn-left">
+			<a href="#function-99-navigationpanel" class="ui-btn ui-btn-icon-right ui-icon-bars ui-btn-icon-notext">Menü</a>
+			<a data-rel="back" class="ui-btn ui-btn-icon-right ui-icon-arrow-l ui-btn-icon-notext">Zurück</a>
+		</div>
+		<h1>Buchstabieralphabet</h1>
+		<div data-role="controlgroup" data-type="horizontal" class="ui-mini ui-btn-right">
+			<a href="#function-02-settings" class="ui-btn ui-btn-icon-right ui-icon-gear ui-btn-icon-notext" data-transition="pop" data-direction="reverse">Einstellungen</a>
+			<a href="#main-02-index" class="ui-btn ui-btn-icon-right ui-icon-home ui-btn-icon-notext">Home</a>
+		</div>
+	</div>
+	<div data-role="content" role="main" class="ui-content">
+		<table data-role="table" id="spellingalphabet-01-spellingalphabet-table" data-mode="columntoggle" class="ui-body-d ui-shadow table-stripe ui-responsive" data-column-btn-theme="a" data-column-btn-text="Alphabete" data-column-popup-theme="c">
+			<thead>
+				<tr>
+					<th>Buchstabe</th>
+					<th data-priority="1">Deutschland</th>
+					<th data-priority="2">NATO</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th>A</th>
+					<td>Anton</td>
+					<td>Alfa</td>
+				</tr>
+				<tr>
+					<th>Ä</th>
+					<td>Ärger</td>
+					<td>Alfa-Echo</td>
+				</tr>
+				<tr>
+					<th>B</th>
+					<td>Berta</td>
+					<td>Bravo</td>
+				</tr>
+				<tr>
+					<th>C</th>
+					<td>Cäsar</td>
+					<td>Charlie</td>
+				</tr>
+				<tr>
+					<th>Ch</th>
+					<td>Charlotte</td>
+					<td>Charlie-Hotel</td>
+				</tr>
+				<tr>
+					<th>D</th>
+					<td>Dora</td>
+					<td>Delta</td>
+				</tr>
+				<tr>
+					<th>E</th>
+					<td>Emil</td>
+					<td>Echo</td>
+				</tr>
+				<tr>
+					<th>F</th>
+					<td>Friedrich</td>
+					<td>Foxtrot</td>
+				</tr>
+				<tr>
+					<th>G</th>
+					<td>Gustav</td>
+					<td>Golf</td>
+				</tr>
+				<tr>
+					<th>H</th>
+					<td>Heinrich</td>
+					<td>Hotel</td>
+				</tr>
+				<tr>
+					<th>I</th>
+					<td>Ida</td>
+					<td>India</td>
+				</tr>
+				<tr>
+					<th>J</th>
+					<td>Julius</td>
+					<td>Juliett</td>
+				</tr>
+				<tr>
+					<th>K</th>
+					<td>Kaufmann</td>
+					<td>Kilo</td>
+				</tr>
+				<tr>
+					<th>L</th>
+					<td>Ludwig</td>
+					<td>Lima</td>
+				</tr>
+				<tr>
+					<th>M</th>
+					<td>Martha</td>
+					<td>Mike</td>
+				</tr>
+				<tr>
+					<th>N</th>
+					<td>Nordpol</td>
+					<td>November</td>
+				</tr>
+				<tr>
+					<th>O</th>
+					<td>Otto</td>
+					<td>Oscar</td>
+				</tr>
+				<tr>
+					<th>Ö</th>
+					<td>Ökonom</td>
+					<td>Oscar-Echo</td>
+				</tr>
+				<tr>
+					<th>P</th>
+					<td>Paula</td>
+					<td>Papa</td>
+				</tr>
+				<tr>
+					<th>Q</th>
+					<td>Quelle</td>
+					<td>Quebec</td>
+				</tr>
+				<tr>
+					<th>R</th>
+					<td>Richard</td>
+					<td>Romeo</td>
+				</tr>
+				<tr>
+					<th>S</th>
+					<td>Samuel</td>
+					<td>Sierra</td>
+				</tr>
+				<tr>
+					<th>Sch</th>
+					<td>Schule</td>
+					<td></td>
+				</tr>
+				<tr>
+					<th>ß</th>
+					<td>Eszett</td>
+					<td>Sierra-Sierra</td>
+				</tr>
+				<tr>
+					<th>T</th>
+					<td>Theodor</td>
+					<td>Tango</td>
+				</tr>
+				<tr>
+					<th>U</th>
+					<td>Ulrich</td>
+					<td>Uniform</td>
+				</tr>
+				<tr>
+					<th>Ü</th>
+					<td>Übermut</td>
+					<td>Uniform-Echo</td>
+				</tr>
+				<tr>
+					<th>V</th>
+					<td>Viktor</td>
+					<td>Viktor</td>
+				</tr>
+				<tr>
+					<th>W</th>
+					<td>Wilhelm</td>
+					<td>Whiskey</td>
+				</tr>
+				<tr>
+					<th>X</th>
+					<td>Xanthippe</td>
+					<td>X-Ray</td>
+				</tr>
+				<tr>
+					<th>Y</th>
+					<td>Ypsilon</td>
+					<td>Yankee</td>
+				</tr>
+				<tr>
+					<th>Z</th>
+					<td>Zacharias</td>
+					<td>Zulu</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div><div data-role="page" id="other-01-donate">
+	<div data-role="header" data-position="fixed">
+		<div data-role="controlgroup" data-type="horizontal" class="ui-mini ui-btn-left">
+			<a href="#function-99-navigationpanel" class="ui-btn ui-btn-icon-right ui-icon-bars ui-btn-icon-notext">Menü</a>
+			<a data-rel="back" class="ui-btn ui-btn-icon-right ui-icon-arrow-l ui-btn-icon-notext">Zurück</a>
+		</div>
+		<h1>Buy Me a Beer</h1>
+		<div data-role="controlgroup" data-type="horizontal" class="ui-mini ui-btn-right">
+			<a href="#function-02-settings" class="ui-btn ui-btn-icon-right ui-icon-gear ui-btn-icon-notext" data-transition="pop" data-direction="reverse">Einstellungen</a>
+			<a href="#main-02-index" class="ui-btn ui-btn-icon-right ui-icon-home ui-btn-icon-notext">Home</a>
+		</div>
+	</div>
+	<div data-role="content" role="main" class="ui-content">
+		<p>Diese App ist von Rettungsdienstler für Rettungsdienstler - uns ist wichtig, dass alle Informationen kostenlos und frei zugänglich für Sie zur Verfügung gestellt werden! Das Entwickeln/Bereitstellen ist leider nicht ohne finanziellen Aufwand möglich. Sollte Ihnen die RettApp gefallen so unterstützen Sie den Entwickler!</p>
+		<p class="align-center">
+			<a href="http://www.amazon.de/registry/wishlist/YRKA7VXAPXGA" data-rel="external" target="foo"><img src="core/icon/1392833874_Amazon.png" alt="Amazon Button" width="120" /></a>
+			<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=G62QH4JXWWUKU" data-rel="external" target="foo"><img src="core/icon/1392833865_PayPal.png" alt="PayPal Button" width="120" /></a>
+		</p>
+	</div>
+</div><div data-role="page" id="other-02-sponsors">
+	<div data-role="header" data-position="fixed">
+		<div data-role="controlgroup" data-type="horizontal" class="ui-mini ui-btn-left">
+			<a href="#function-99-navigationpanel" class="ui-btn ui-btn-icon-right ui-icon-bars ui-btn-icon-notext">Menü</a>
+			<a data-rel="back" class="ui-btn ui-btn-icon-right ui-icon-arrow-l ui-btn-icon-notext">Zurück</a>
+		</div>
+		<h1>Sponsoren</h1>
+		<div data-role="controlgroup" data-type="horizontal" class="ui-mini ui-btn-right">
+			<a href="#function-02-settings" class="ui-btn ui-btn-icon-right ui-icon-gear ui-btn-icon-notext" data-transition="pop" data-direction="reverse">Einstellungen</a>
+			<a href="#main-02-index" class="ui-btn ui-btn-icon-right ui-icon-home ui-btn-icon-notext">Home</a>
+		</div>
+	</div>
+	<div data-role="content" role="main" class="ui-content">
+		<p>Zur Zeit gibt es keine offiziellen Sponsoren</p> 
+	</div>
+</div><div data-role="page" id="other-03-releasenotes">
+	<div data-role="header" data-position="fixed">
+		<div data-role="controlgroup" data-type="horizontal" class="ui-mini ui-btn-left">
+			<a href="#function-99-navigationpanel" class="ui-btn ui-btn-icon-right ui-icon-bars ui-btn-icon-notext">Menü</a>
+			<a data-rel="back" class="ui-btn ui-btn-icon-right ui-icon-arrow-l ui-btn-icon-notext">Zurück</a>
+		</div>
+		<h1>Release Notes</h1>
+		<div data-role="controlgroup" data-type="horizontal" class="ui-mini ui-btn-right">
+			<a href="#function-02-settings" class="ui-btn ui-btn-icon-right ui-icon-gear ui-btn-icon-notext" data-transition="pop" data-direction="reverse">Einstellungen</a>
+			<a href="#main-02-index" class="ui-btn ui-btn-icon-right ui-icon-home ui-btn-icon-notext">Home</a>
+		</div>
+	</div>
+	<div data-role="content" role="main" class="ui-content">
+		<div data-role="collapsibleset" data-theme="a" data-content-theme="a">
+			<div data-role="collapsible">
+				<h2>Version 0.0.1<span class="ui-li-count">Aktuell</span></h2>
+				<p>Initial Release</p>
+			</div>
+		</div>
+	</div>
+</div><div data-role="page" id="aid-01-index">
+	<div data-role="header" data-position="fixed">
+		<div data-role="controlgroup" data-type="horizontal" class="ui-mini ui-btn-left">
+			<a href="#function-99-navigationpanel" class="ui-btn ui-btn-icon-right ui-icon-bars ui-btn-icon-notext">Menü</a>
+			<a data-rel="back" class="ui-btn ui-btn-icon-right ui-icon-arrow-l ui-btn-icon-notext">Zurück</a>
+		</div>
+		<h1>Hilfsmittel</h1>
+		<div data-role="controlgroup" data-type="horizontal" class="ui-mini ui-btn-right">
+			<a href="#function-02-settings" class="ui-btn ui-btn-icon-right ui-icon-gear ui-btn-icon-notext" data-transition="pop" data-direction="reverse">Einstellungen</a>
+			<a href="#main-02-index" class="ui-btn ui-btn-icon-right ui-icon-home ui-btn-icon-notext">Home</a>
+		</div>
+	</div>
+	<div data-role="content" role="main" class="ui-content">
+		<ul data-role="listview" data-filter="true" data-filter-placeholder="Suche Hilfsmittel..." data-inset="true" class="aid">
+			<li divider="Hilfsmittel" data-filtertext="Buchstabiertafel"><a href="#spellingalphabet-01-index">Buchstabiertafel</a></li><li divider="Hilfsmittel" data-filtertext="Dosierer">Dosierer<span class="ui-li-count">nicht verfügbar</span></li><li divider="Schemata" data-filtertext="ABC-Regel">ABC-Regel<span class="ui-li-count">nicht verfügbar</span></li><li divider="Schemata" data-filtertext="ABCDE">ABCDE-Schema<span class="ui-li-count">nicht verfügbar</span></li><li divider="Schemata" data-filtertext="AVPU-Schema,WASB-Schema">AVPU-Schema<span class="ui-li-count">nicht verfügbar</span></li><li divider="Schemata" data-filtertext="Apgar-Score">Apgar-Score<span class="ui-li-count">nicht verfügbar</span></li><li divider="Schemata" data-filtertext="BASIC">BASIC<span class="ui-li-count">nicht verfügbar</span></li><li divider="Schemata" data-filtertext="BAUM-Schema">BAUM-Schema<span class="ui-li-count">nicht verfügbar</span></li><li divider="Schemata" data-filtertext="CPSS, Cincinatty Prehospital Stroce Scale">CPSS<span class="ui-li-count">nicht verfügbar</span></li><li divider="Schemata" data-filtertext="DMS">DMS<span class="ui-li-count">nicht verfügbar</span></li><li divider="Schemata" data-filtertext="DOPES">DOPES<span class="ui-li-count">nicht verfügbar</span></li><li divider="Schemata" data-filtertext="FAST">FAST<span class="ui-li-count">nicht verfügbar</span></li><li divider="Schemata" data-filtertext="4HsHITS, HITS">HITS<span class="ui-li-count">nicht verfügbar</span></li><li divider="Schemata" data-filtertext="IPAP">IPAP<span class="ui-li-count">nicht verfügbar</span></li><li divider="Schemata" data-filtertext="IPPAF-Schema">IPPAF-Schema<span class="ui-li-count">nicht verfügbar</span></li><li divider="Schemata" data-filtertext="ISS, Injury Severity Score">ISS<span class="ui-li-count">nicht verfügbar</span></li><li divider="Schemata" data-filtertext="KUSS-Skala,Kindliche Unbehagens- und Schmerz-Skala">KUSS-Skala<span class="ui-li-count">nicht verfügbar</span></li><li divider="Schemata" data-filtertext="MEND, Miami Emergency Neurological Deficite Score">MEND<span class="ui-li-count">nicht verfügbar</span></li><li divider="Schemata" data-filtertext="MONAS-BH">MONAS-BH<span class="ui-li-count">nicht verfügbar</span></li><li divider="Schemata" data-filtertext="NACA-Score">NACA-Score<span class="ui-li-count">nicht verfügbar</span></li><li divider="Schemata" data-filtertext="OPQRST">OPQRST<span class="ui-li-count">nicht verfügbar</span></li><li divider="Schemata" data-filtertext="PECH">PECH-Schema<span class="ui-li-count">nicht verfügbar</span></li><li divider="Schemata" data-filtertext="SAMPLE">SAMPLE-Schema<span class="ui-li-count">nicht verfügbar</span></li><li divider="Schemata" data-filtertext="SAMPLER+S">SAMPLER+S<span class="ui-li-count">nicht verfügbar</span></li><li divider="Schemata" data-filtertext="SBAR">SBAR<span class="ui-li-count">nicht verfügbar</span></li><li divider="Schemata" data-filtertext="SSSS">SSSS<span class="ui-li-count">nicht verfügbar</span></li>		</ul>
+	</div>
+</div><div data-role="page" id="law-01-imprint">
+	<div data-role="header">
+		<h1>Kontakt</h1>
+	</div>
+	<div data-role="content" role="main" class="ui-content">
+		<p>Angaben gemäß §5 TMG:</p>
+		<p>Jonathan Starck<br>
+			Postfach 2006<br>
+			67510 Worms</p>
+		<p>
+			<a href="mailto:support@rettapp.org?body=Bitte%20beachten%20Sie%2C%20dass%20alle%20Email-Anfragen%20%C3%BCber%20das%20Ticket-System%20von%20Cretection%20Web-%20%26%20Computertechnik%20l%C3%A4uft.%20Trotz%20allem%20ist%20die%20RettApp%20ein%20unabh%C3%A4ngige%20App%20ohne%20kommerzielle%20Absichten!" class="ui-btn ui-icon-mail ui-btn-icon-left">support@rettapp.org</a>
+			<a href="#law-02-copyrights" class="ui-btn ui-icon-tag ui-btn-icon-left" data-rel="dialog">Copyrights</a>
+		</p>
+	</div>
+</div><div data-role="page" id="law-02-copyrights">
+	<div data-role="header">
+		<h1>Copyrights</h1>
+	</div>
+	<div data-role="content" role="main" class="ui-content">
+		<ul data-role="listview" data-inset="true">
+			<li data-role="list-divider">Icons</li>
+			<li>
+				<a href="https://www.iconfinder.com/iconsets/50-payment-system" data-rel="external" target="foo">
+					<img src="core/icon/1392833874_Amazon.png" height="80" />
+					<h2>Amazon Icon</h2>
+					<p>Copyright by Artem M.</p>
+				</a>
+			</li>
+			<li>
+				<a href="https://www.iconfinder.com/iconsets/50-payment-system" data-rel="external" target="foo">
+					<img src="core/icon/1392833865_PayPal.png" height="80" />
+					<h2>PayPal Icon</h2>
+					<p>Copyright by Artem M.</p>
+				</a>
+			</li>
+			<li>
+				<a href="http://www.everaldo.com/" data-rel="external" target="foo">
+					<img src="core/icon/1392835144_voice-support.png"/>
+					<h2>Leitstellen Icon</h2>
+					<p>Copyright by Everaldo Coelho - LGPL</p>
+				</a>
+			</li>
+			<li>
+				<a href="http://bevelandemboss.net/" data-rel="external" target="foo">
+					<img src="core/icon/1392835739_map-icon.png"/>
+					<h2>Karten Icon</h2>
+					<p>Copyright by Bevelandemboss.net - Free for commercial use</p>
+				</a>
+			</li>
+			<li>
+				<a href="http://e-young.deviantart.com/" data-rel="external" target="foo">
+					<img src="core/icon/1392836083_1_17.png" width="80"/>
+					<h2>Medikamente Icon</h2>
+					<p>Copyright by E-young - Free for commercial use</p>
+				</a>
+			</li>
+			<li>
+				<a href="http://iconleak.com/" data-rel="external" target="foo">
+					<img src="core/icon/1392922996_calculator.png" width="80"/>
+					<h2>Rechner Icon</h2>
+					<p>Copyright by Iconleak - Free for commercial use</p>
+				</a>
+			</li>
+			<li>
+				<a href="http://icons8.com/" data-rel="external" target="foo">
+					<img src="core/icon/1392926846_missed_call.png" width="80"/>
+					<h2>Anruf Icon</h2>
+					<p>Copyright by Visual Pharm - Free for commercial use</p>
+				</a>
+			</li>
+			<li>
+				<a href="http://www.centigrade.de/" data-rel="external" target="foo">
+					<img src="core/icon/1392838565_Hospital.png" width="80"/>
+					<h2>Krankenhaus Icon</h2>
+					<p>Copyright by Centigrade - Free for commercial use</p>
+				</a>
+			</li>
+			<li data-role="list-divider">Information</li>
+			<li>
+				<a href="http://www.dgu-traumanetzwerk.de/" data-rel="external" target="foo">
+					<h2>Trauma Netzwerk</h2>
+					<p>by DGU. Qualifikationen der Krankenhäuser in Deutschland</p>
+				</a>
+			</li>
+			<li>
+				<a href="http://www.geodatenzentrum.de" data-rel="external" target="foo">
+					<h2>Landkreis Informationen</h2>
+					<p>by BKG. Die geometrischen Daten der Landkreis</p>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div><div data-role="page" id="function-02-settings">
+	<div data-role="header" data-position="fixed">
+		<div data-role="controlgroup" data-type="horizontal" class="ui-mini ui-btn-left">
+			<a href="#function-99-navigationpanel" class="ui-btn ui-btn-icon-right ui-icon-bars ui-btn-icon-notext">Menü</a>
+			<a data-rel="back" class="ui-btn ui-btn-icon-right ui-icon-arrow-l ui-btn-icon-notext">Zurück</a>
+		</div>
+		<h1>Einstellungen</h1>
+		<div data-role="controlgroup" data-type="horizontal" class="ui-mini ui-btn-right">
+			<a href="#function-02-settings" class="ui-btn ui-btn-icon-right ui-icon-gear ui-btn-icon-notext">Einstellungen</a>
+			<a href="#main-02-index" class="ui-btn ui-btn-icon-right ui-icon-home ui-btn-icon-notext" data-transition="pop">Home</a>
+		</div>
+	</div>
+	<div data-role="content" role="main" class="ui-content">
+		<form>
+			<div class="ui-field-contain">
+				<label for="settings-startdisclaimer">Rechtliches bei Start:</label>
+				<select name="flip-1" id="settings-startdisclaimer" data-role="slider">
+					<option value="1">Off</option>
+					<option value="0">On</option>
+				</select>
+			</div>
+		</form>
+		<a id="saveSettings" class="ui-btn ui-btn-icon-left ui-icon-check ui-corner-all show-page-loading-msg" data-textonly="false" data-textvisible="true" data-msgtext="" data-inline="true">Speichern</a>
+	</div>
+</div><div data-role="panel" id="function-99-navigationpanel" data-position="left" data-display="overlay" data-theme="b">
+	<ul data-role="listview">
+		<li data-icon="back"><a data-rel="close">Schliessen</a></li>
+		<li data-role="list-divider">Hauptfunktionen</li>
+		<li><a href="#aid-01-index">Hilfmittel</a></li>
+		<li><a href="#">Dosierer</a></li>
+		<li><a href="#">Pack Years Kalkulator</a></li>
+		<li><a href="#spellingalphabet-01-index">Buchstabiertafel</a></li>
+		<li data-role="list-divider">Helfen</li>
+		<li data-icon="star"><a href="#other-02-sponsors">Sponsoren</a></li>
+		<li data-icon="heart"><a href="#other-01-donate">Buy Me a Beer</a></li>
+		<li data-icon="comment"><a href="http://community.rettapp.org/" data-rel="external" target="foo">Community</a></li>
+		<li data-icon="comment"><a href="http://www.facebook.com/RettApp" data-rel="external" target="foo">Liken &amp; Teilen</a></li>
+		<li data-icon="info"><a href="http://aid.rettapp.org/" data-rel="external" target="foo">Webseite</a></li>
+		<li data-role="list-divider">Entwicklung</li>
+		<li data-icon="info"><a href="#other-03-releasenotes">Release Notes</a></li>
+	</ul>
+</div></body></html>
