@@ -1,62 +1,9 @@
-/* !Copyright */
 /*
-	Project: org.rettapp.aid
-	Description: RettApp is an Open-Source-Project for persons working at a emergency medical service in Germany
-	Author: Jonathan Starck 
-	Licence: GNU GENERAL PUBLIC LICENSE Version 2, June 1991 & European Union Public Licence
-	Source: https://github.com/RettApp/
+Project: org.rettapp.aid
+Author: Jonathan Starck
+License: GNU GENERAL PUBLIC Version2, June 1991 & European Union Public Licence
+Source: https://github.com/RettApp/org.rettapp.aid
+
+Last Updated: 22. Mai 2015 12:24:59
 */
-.nowrap {white-space: nowrap;}
-.align-center {
-	text-align: center;
-	margin: 0 auto;
-}
-.rettapp-banner {
-	width: 80%;
-	text-align: center;
-	margin: 0 auto;
-}
-.rettapp-banner img {
-	width: 100%;
-	max-width: 973px;
-}
-img.desaturate {
-	-webkit-filter: grayscale(100%);
-	-moz-filter: grayscale(100%);
-	filter: grayscale(100%);
-}
-div.result-corners {
-    border-style: dashed;
-    border-width: 0.15em;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    padding: 0.1em 1em;
-    margin: 1em 0;
-    background: #FADDDD;
-}
-li.completed a {
-	color: grey !important;
-	text-decoration: line-through !important;
-}
-
-
-* {
-   -ms-user-select: none; /* IE 10+ */
-   -moz-user-select: -moz-none;
-   -khtml-user-select: none;
-   -webkit-user-select: none;
-   user-select: none;
-}
-
-.selectable {
-   -ms-user-select: auto;
-   -moz-user-select: auto;
-   -khtml-user-select: auto;
-   -webkit-user-select: auto;
-   user-select: auto;
-}
-
-.navbar {overflow: hidden;}
-.container {margin: 0 auto;}
-.container {max-width: 700px;}
+.nowrap{white-space:nowrap}.align-center{text-align:center;margin:0 auto}.rettapp-banner{width:80%;text-align:center;margin:0 auto}.rettapp-banner img{width:100%;max-width:973px}img.desaturate{-webkit-filter:grayscale(100%);-moz-filter:grayscale(100%);filter:grayscale(100%)}div.result-corners{border-style:dashed;border-width:.15em;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;padding:.1em 1em;margin:1em 0;background:#fadddd}li.completed a{color:grey!important;text-decoration:line-through!important}.navbar{overflow:hidden}.container{margin:0 auto}.container{max-width:700px}
