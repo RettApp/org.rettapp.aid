@@ -16,7 +16,6 @@ function phonegapReady(){
 
 // App Logic
 function myAppLogic(){
-	alert('Works');
 	$(document).on('click', 'a', function (e){
 		var elem = $(this);
 		var url = elem.attr('href');
