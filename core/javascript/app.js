@@ -6,7 +6,13 @@
 var versionRettApp = "001";
 var jqmReady = $.Deferred(), pgReady = $.Deferred();
 
-document.addEventListener("deviceready", myAppLogic(), false);
+document.addEventListener("deviceready", phonegapReady(), false);
+
+function phonegapReady(){
+	$(document).on( "mobileinit", function(){
+		myAppLogic();
+	});
+}
 
 // App Logic
 function myAppLogic(){
