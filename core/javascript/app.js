@@ -13,7 +13,7 @@ document.addEventListener("deviceready", deviceReady, false);
 //Resolve gapReady in reponse to deviceReady event
 function deviceReady()
 {
-	gapReady.resolve();
+	return true;
 }
 
 /**
