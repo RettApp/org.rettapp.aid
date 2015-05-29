@@ -8,7 +8,7 @@ var gapReady = $.Deferred();
 var jqmReady = $.Deferred();
 
 //Catch "deviceready" event which is fired when PhoneGap is ready
-document.addEventListener("deviceReady", deviceReady, false);
+document.addEventListener("deviceready", deviceReady, false);
 
 //Resolve gapReady in reponse to deviceReady event
 function deviceReady()
@@ -20,7 +20,7 @@ function deviceReady()
 * Catch "mobileinit" event which is fired when a jQueryMobile is loaded.
 * Ensure that we respond to this event only once.
 */
-$(document).one("mobileinit", function(){
+$(document).on("mobileinit", function(){
 	jqmReady.resolve();
 });
 
