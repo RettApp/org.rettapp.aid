@@ -6,16 +6,7 @@
 var versionRettApp = "001";
 var jqmReady = $.Deferred(), pgReady = $.Deferred();
 
-// jqm page is ready
-$(document).one("pageinit", jqmReady.resolve);
-
-// phonegap ready
-document.addEventListener("deviceready", pgReady.resolve, false);
-
-// all ready, throw a custom 'onDeviceready' event
-$.when(jqmReady, pgReady).then(function(){
-	myAppLogic();
-});
+document.addEventListener("deviceready", myAppLogic(), false);
 
 // App Logic
 function myAppLogic(){
