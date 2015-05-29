@@ -14,7 +14,7 @@
 	version     = "0.0.1" >
 
 	<name>
-		AID: RettApp
+		RettApp AID
 	</name>
 	<description>
 		Kleine Helfer für den Rettungsdienst Alltag.
