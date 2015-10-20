@@ -6,4 +6,7 @@ Source: https://github.com/RettApp/org.rettapp.aid
 
 Last Updated: 22. Mai 2015 12:24:59
 */
-.nowrap{white-space:nowrap}.align-center{text-align:center;margin:0 auto}.rettapp-banner{width:80%;text-align:center;margin:0 auto}.rettapp-banner img{width:100%;max-width:973px}img.desaturate{-webkit-filter:grayscale(100%);-moz-filter:grayscale(100%);filter:grayscale(100%)}div.result-corners{border-style:dashed;border-width:.15em;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;padding:.1em 1em;margin:1em 0;background:#fadddd}li.completed a{color:grey!important;text-decoration:line-through!important}.navbar{overflow:hidden}.container{margin:0 auto}.container{max-width:700px}
+.nowrap{white-space:nowrap}.align-center{text-align:center;margin:0 auto}.rettapp-banner{width:80%;text-align:center;margin:0 auto}.rettapp-banner img{width:100%;max-width:973px}img.desaturate{-webkit-filter:grayscale(100%);-moz-filter:grayscale(100%);filter:grayscale(100%)}div.result-corners{border-style:dashed;border-width:.15em;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;padding:.1em 1em;margin:1em 0;background:#fadddd}li.completed a{color:grey!important;text-decoration:line-through!important}.navbar{overflow:hidden}.container{margin:0 auto}.container{max-width:700px}[data-role="page"] {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
