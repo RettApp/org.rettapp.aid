@@ -55,9 +55,10 @@
 	<gap:splash src="core/image/splash/android/xhdpi.png" gap:platform="android" gap:density="xhdpi" />
 	
 	<gap:plugin name="com.telerik.plugins.wkwebview" version="0.2.5" />
-	<gap:plugin name="org.apache.cordova.inappbrowser" />
-	<gap:plugin name="org.apache.cordova.statusbar" />
-	<gap:plugin name="nl.x-services.plugins.launchmyapp">
+	<gap:plugin name="nl.x-services.plugins.launchmyapp" source="pgb" version="3.2.0" />
+	<gap:plugin name="org.apache.cordova.inappbrowser" source="pgb" version="0.5.2" />
+	<gap:plugin name="org.apache.cordova.statusbar" source="pgb" version="0.1.4" />
+
 		<param name="URL_SCHEME" value="orgrettappaid" />
 	</gap:plugin>
 	
