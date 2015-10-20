@@ -23,7 +23,7 @@
 		Jonathan Starck
 	</author>
 	
-	<preference name="phonegap-version" value="cli-5.2.0" />
+	<preference name="phonegap-version" value="cli-5.1.1" />
 	<preference name="permissions" value="none"/>
 	
 	<icon src="icon.png" />
