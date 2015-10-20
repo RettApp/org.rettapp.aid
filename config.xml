@@ -54,6 +54,7 @@
 	<gap:splash src="core/image/splash/android/hdpi.png" gap:platform="android" gap:density="hdpi" />
 	<gap:splash src="core/image/splash/android/xhdpi.png" gap:platform="android" gap:density="xhdpi" />
 	
+	<gap:plugin name="com.telerik.plugins.wkwebview" version="0.2.5" />
 	<gap:plugin name="org.apache.cordova.inappbrowser" />
 	<gap:plugin name="org.apache.cordova.statusbar" />
 	<gap:plugin name="nl.x-services.plugins.launchmyapp">
